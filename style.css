@@ -1,0 +1,121 @@
+/* Style for body */
+body {
+  background-image: url(Images/Cover.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Style for search button */
+.my-search-bar {
+  background-color: rgb(248, 249, 250);
+  padding-bottom: 25px;
+}
+
+/* Style for bg light */
+.d-flex {
+  margin-left: 20px;
+  /* Set search bar width */
+  width: 500px;
+}
+
+/* Menu Container */
+.menu-container {
+  width: 700px;
+}
+
+/* Menu Item */
+.menu-item {
+  font-size: 20px;
+  /* Set color to text */
+  color: black;
+}
+
+/* Menu Item Anchor Style */
+.menu-anchor-item {
+  /* Remove underline from anchor */
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+}
+
+/* Menu Item Anchor Style on Hover */
+.menu-anchor-item:hover {
+  color: blue;
+}
+
+/* Style for current page anchor */
+.current-page-item {
+  margin: auto;
+
+  /* Set color to blue */
+  color: black;
+  font-weight: bold;
+}
+
+.gradient-text {
+  /* Fallback: Set a background color. */
+  background-color: #CA4246;
+
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #00ff88, #00FFFF, 19%, #0000FF 13%);
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Animate the text when loading the element. */
+  /* This animates it on page load and when hovering out. */
+  animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+}
+
+.gradient-text:hover {
+  animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-simple-animation-rev {
+  0% {
+    background-size: 650%;
+  }
+
+  40% {
+    background-size: 650%;
+  }
+
+  100% {
+    background-size: 100%;
+  }
+}
+
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbow-text-simple-animation {
+  0% {
+    background-size: 100%;
+  }
+
+  80% {
+    background-size: 650%;
+  }
+
+  100% {
+    background-size: 650%;
+  }
+}
+
+/* Style for Content Container */
+.content-container {
+  margin-top: 200px;
+  width: 400px;
+}
+
+/* Style for page-content */
+.page-content {
+  font-size: 6em;
+}
