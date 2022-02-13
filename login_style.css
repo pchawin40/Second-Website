@@ -1,0 +1,152 @@
+/* Style for entire page */
+body {
+  overflow-x: hidden;
+}
+
+/* Style for search button */
+.my-search-bar {
+  background-color: rgb(248, 249, 250);
+  padding-bottom: 25px;
+}
+
+/* Style for bg light */
+.d-flex {
+  margin-left: 20px;
+  /* Set search bar width */
+  width: 400px;
+}
+
+/* Menu Item */
+.menu-item {
+  font-size: 20px;
+  /* Set color to text */
+  color: black;
+}
+
+/* Menu Item Anchor Style */
+.menu-anchor-item {
+  /* Remove underline from anchor */
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+}
+
+/* Menu Item Anchor Style on Hover */
+.menu-anchor-item:hover {
+  color: rgb(88, 86, 86);
+  font-weight: bold;
+}
+
+/* Style for current page anchor */
+.current-page-item {
+  margin: auto;
+
+  /* Set color to blue */
+  color: black;
+  font-weight: bold;
+}
+
+/* Style for page-content */
+.page-content {
+  font-size: 6em;
+}
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #6a11cb;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+}
+
+.form-button {
+  float: right;
+}
+
+/* If screen is bigger than 1200px  */
+@media (min-width: 1200px) {
+
+  body {
+    background: url(Images/Cover.png) no-repeat;
+    position: absolute;
+    background-size: cover;
+    bottom: 0px;
+    height: 100%;
+  }
+
+  .logo-container {
+    width: 380px;
+    height: 400px;
+    background-color: red;
+  }
+
+  .logo-image {
+    width: 380px;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  /* Style for Content Container */
+  .sign-in-container {
+    text-align: left;
+    top: 0px;
+    margin-top: 200px;
+    margin-left: 25px;
+    width: 38%;
+    padding-bottom: 20px;
+  }
+
+  .form-container {
+    top: 0px;
+    margin-top: 20%;
+    margin-left: 5rem;
+  }
+}
+
+/* If screen is smaller than 1200px  */
+@media only screen and (max-width: 1200px) {
+  body {
+    background: no-repeat;
+  }
+
+  .sign-in-container {
+    text-align: center;
+    top: 0px;
+    width: fit-content;
+    padding-bottom: 20px;
+  }
+
+  .header-content-text {
+    margin-top: 0;
+  }
+
+  .logo-container {
+    width: 50%;
+    height: 400px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 500px;
+  }
+
+  .logo-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-container {
+    justify-content: center;
+    padding-bottom: 100px;
+    align-items: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .form-button {
+    float: right;
+  }
+}

@@ -1,8 +1,6 @@
-/* Style for body */
+/* Style for entire page */
 body {
-  background-image: url(Images/Cover.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 /* Style for search button */
@@ -15,13 +13,13 @@ body {
 .d-flex {
   margin-left: 20px;
   /* Set search bar width */
-  width: 500px;
+  width: 400px;
 }
 
 /* Menu Container */
-.menu-container {
-  width: 700px;
-}
+/* .menu-container {
+  background-color: white !important;
+} */
 
 /* Menu Item */
 .menu-item {
@@ -39,7 +37,7 @@ body {
 
 /* Menu Item Anchor Style on Hover */
 .menu-anchor-item:hover {
-  color: blue;
+  color: rgb(51, 50, 50);
 }
 
 /* Style for current page anchor */
@@ -53,13 +51,13 @@ body {
 
 .gradient-text {
   /* Fallback: Set a background color. */
-  background-color: #CA4246;
+  background-color: #0077ff;
 
   /* Create the gradient. */
-  background-image: linear-gradient(45deg, #00ff88, #00FFFF, 19%, #0000FF 13%);
+  background-image: linear-gradient(90deg, #00ff88, #0066ff, #0077ff, #0000FF);
 
   /* Set the background size and repeat properties. */
-  background-size: 100%;
+  /* background-size: 100%; */
   background-repeat: repeat;
 
   /* Use the text as a mask for the background. */
@@ -69,11 +67,11 @@ body {
 
   /* Animate the text when loading the element. */
   /* This animates it on page load and when hovering out. */
-  animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+  animation: rainbow-text-simple-animation-rev 1.25s ease forwards;
 }
 
 .gradient-text:hover {
-  animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+  animation: rainbow-text-simple-animation 1.25s ease-in forwards;
 }
 
 
@@ -109,13 +107,90 @@ body {
   }
 }
 
-/* Style for Content Container */
-.content-container {
-  margin-top: 200px;
-  width: 400px;
-}
-
 /* Style for page-content */
 .page-content {
   font-size: 6em;
+}
+
+.header-text {
+  padding-bottom: 50px;
+}
+
+/* If screen is bigger than 1200px  */
+@media (min-width: 1200px) {
+
+  body {
+    background: url(Images/Cover.png) no-repeat;
+    position: absolute;
+    background-size: cover;
+    bottom: 0px;
+    height: 100%;
+  }
+
+  .logo-container {
+    width: 380px;
+    height: 400px;
+    background-color: red;
+  }
+
+  .logo-image {
+    width: 380px;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  /* Style for Content Container */
+  .content-container {
+    text-align: left;
+    top: 0px;
+    margin-left: 25px;
+    width: 38%;
+    padding-bottom: 20px;
+  }
+
+  .inner-content-text {}
+}
+
+/* If screen is smaller than 1200px  */
+@media only screen and (max-width: 1200px) {
+  body {
+    background: no-repeat;
+  }
+
+  .content-container {
+    text-align: center;
+    top: 0px;
+    width: fit-content;
+    padding-bottom: 100px;
+    justify-content: center;
+  }
+
+  .header-content-text {
+    margin-top: 0;
+    padding: 10px;
+    margin: auto;
+    width: 90%;
+  }
+
+  .logo-container {
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 500px;
+  }
+
+  .logo-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+  }
+
+  .inner-content-text {
+    padding-top: 50px;
+    margin: auto;
+    width: 90%;
+  }
 }
